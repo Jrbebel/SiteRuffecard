@@ -1,0 +1,311 @@
+{% extends "SiteruffecardeSiteBundle::Layout.html.twig"%}
+
+{% block body %}
+
+    <!-- Slider Section Starts -->
+    <div class="slider">
+        <div class="container">
+            <div id="main-carousel" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper For Slides Starts -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="{{asset('bundles/siteruffecardesite/images/slider-imgs/slide1-img.jpg')}}" alt="Slider" class="img-responsive" />
+                    </div>
+                    <div class="item">
+                        <img src="{{asset('bundles/siteruffecardesite/images/slider-imgs/slide3-img.jpg')}}" alt="Slider" class="img-responsive" />
+                    </div>
+                    <div class="item">
+                        <img src="{{asset('bundles/siteruffecardesite/images/slider-imgs/slide2-img.jpg')}}" alt="Slider" class="img-responsive" />
+                    </div>
+                </div>
+                <!-- Wrapper For Slides Ends -->
+                <!-- Controls Starts -->
+                <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                <!-- Controls Ends -->
+            </div>				
+        </div>
+    </div>
+    <!-- Slider Section Ends -->
+
+
+    <!-- 3 Column Banners Starts -->
+    <section class="products-list">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="padding-box white-bg text-center promo-big">
+
+
+                        <h3>Offre coup de coeur</h3>
+
+                        <p>
+                            <img alt="InterHome" src="{{asset('bundles/siteruffecardesite/img/logoInterhome.jpg')}}"></img>
+                        </p>
+
+                        <div class="grey-bg padding-box">
+
+                            <h4>
+                                <small>jusqu'à</small>
+                                <strong>8%</strong>
+                                de remboursé
+                                <br>
+                                <small>pour toute commande</small>
+                            </h4>
+
+                            <p class="promo-big-date">
+                                <span>du 22/04/2015 au 31/12/2015</span>
+                            </p>
+
+                            <p class="withMargin">
+                                <span class="button button-green">Demander votre carte</span>
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="padding-box white-bg text-center promo-big">
+
+
+                        <h3>Opération à ne pas rater</h3>
+
+                        <p>
+                            <img alt="Hp.fr" src="{{asset('bundles/siteruffecardesite/img/logoHp.jpg')}}"></img>
+                        </p>
+
+                        <div class="grey-bg padding-box">
+
+                            <h4>
+                                <small>jusqu'à</small>
+                                <strong>15%</strong>
+                                de remboursé
+                                <br>
+                                <small>pour toute commande</small>
+                            </h4>
+
+                            <p class="promo-big-date">
+                                <span>du 12/05/2015 au 31/07/2015</span>
+                            </p>
+
+                            <p class="withMargin">
+                                <span class="button button-green">Demander votre carte</span>
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="padding-box white-bg text-center promo-big">
+                        <h3>Marchand à ne pas rater</h3>
+                        <p>
+                            <img alt="Adam Touring" src="{{asset('bundles/siteruffecardesite/img/logoAdamTouring.jpg')}}"></img>
+                        </p>
+
+                        <div class="grey-bg padding-box">
+
+                            <h4>
+                                <small>jusqu'à</small>
+                                <strong>11%</strong>
+                                de remboursé
+                                <br>
+                                <small>pour toute commande</small>
+                            </h4>
+
+                            <p class="promo-big-date">
+                                <span>du 12/05/2015 au 31/07/2015</span>
+                            </p>
+
+                            <p class="withMargin">
+                                <span class="button button-green">Demander votre carte</span>
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section class="products-list">
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="text-center promo-item flipper-trigger-vertical">
+                            <a class="" title="" rel="" href="#">
+                                <h3>
+                                    <img alt="Galerie Lafayette" src="{{asset('bundles/siteruffecardesite/img/galerielafayet.jpg')}}"></img>
+                                </h3>
+                                <h4>
+                                    <strong>5%</strong>
+                                    de reduction
+                                </h4>
+                                <div class="flipper">
+                                    <span class="button button-green">Demander votre carte</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center promo-item flipper-trigger-vertical">
+                            <a class="" title="" rel="" href="#">
+                                <h3>
+                                    <img alt="Lacoste" src="{{asset('bundles/siteruffecardesite/img/Lacoste.jpg')}}"></img>
+                                </h3>
+                                <h4>
+                                    <strong>10%</strong>
+                                    de reduction
+                                </h4>
+                                <div class="flipper">
+                                    <span class="button button-green">Demander votre carte</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center promo-item flipper-trigger-vertical">
+                            <a class="" title="" rel="" href="#">
+                                <h3>
+                                    <img alt="Confort Visuel" src="{{asset('bundles/siteruffecardesite/img/confortvisuel.jpg')}}"></img>
+                                </h3>
+                                <h4>
+                                    <strong>8%</strong>
+                                    de reduction
+                                </h4>
+                                <div class="flipper">
+                                    <span class="button button-green">Demander votre carte</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center promo-item flipper-trigger-vertical">
+                            <a class="" title="" rel="" href="#">
+                                <h3>
+                                    <img alt="Zalando" src="{{asset('bundles/siteruffecardesite/img/zalando.jpg')}}"></img>
+                                </h3>
+                                <h4>
+                                    <strong>20%</strong>
+                                    de reduction
+                                </h4>
+                                <div class="flipper">
+                                    <span class="button button-green">Demander votre carte</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <br>
+
+        <article>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="text-center promo-item flipper-trigger-vertical">
+                            <a class="" title="" rel="" href="#">
+                                <h3>
+                                    <img alt="Zalando" src="{{asset('bundles/siteruffecardesite/img/Defshop.jpg')}}"></img>
+                                </h3>
+                                <h4>
+                                    <strong>15%</strong>
+                                    de reduction
+                                </h4>
+                                <div class="flipper">
+                                    <span class="button button-green">Demander votre carte</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center promo-item flipper-trigger-vertical">
+                            <a class="" title="" rel="" href="#">
+                                <h3>
+                                    <img alt="Zalando" src="{{asset('bundles/siteruffecardesite/img/MMDirect.jpg')}}"></img>
+                                </h3>
+                                <h4>
+                                    <strong>6%</strong>
+                                    de reduction
+                                </h4>
+                                <div class="flipper">
+                                    <span class="button button-green">Demander votre carte</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center promo-item flipper-trigger-vertical">
+                            <a class="" title="" rel="" href="#">
+                                <h3>
+                                    <img alt="Zalando" src="{{asset('bundles/siteruffecardesite/img/sarenza.jpg')}}"></img>
+                                </h3>
+                                <h4>
+                                    <strong>9%</strong>
+                                    de reduction
+                                </h4>
+                                <div class="flipper">
+                                    <span class="button button-green">Demander votre carte</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="text-center promo-item flipper-trigger-vertical">
+                            <a class="" title="" rel="" href="#">
+                                <h3>
+                                    <img alt="Zalando" src="{{asset('bundles/siteruffecardesite/img/timefy.jpg')}}"></img>
+                                </h3>
+                                <h4>
+                                    <strong>19%</strong>
+                                    de reduction
+                                </h4>
+                                <div class="flipper">
+                                    <span class="button button-green">Demander votre carte</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </article>
+
+
+    </section>
+    <!-- 3 Column Banners Ends -->
+
+{% endblock body %}
