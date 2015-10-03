@@ -21,7 +21,7 @@ p{
     color:black;
 }
 
-
+/*Page de login*/
 .container-login{
       font-family: 'Oxygen',Helvetica, Times New Roman, sans-serif ; 
     padding: 80px;
@@ -30,6 +30,12 @@ p{
  #lostmsd{
     margin-left: 180px;
     margin-bottom: 20px;
+}
+
+/*Page de reinitialisation du mot de passe*/ 
+
+#reinitialise{
+    margin-top : 20px;
 }
 
 /* Standard Styles Starts */
