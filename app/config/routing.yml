@@ -1,3 +1,8 @@
+siteruffecarde_gestionuser:
+    resource: "@SiteruffecardeGestionuserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 siteruffecarde_site:
     resource: "@SiteruffecardeSiteBundle/Controller/"
     type:     annotation
@@ -6,3 +11,7 @@ siteruffecarde_site:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+#fosuserBundle
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

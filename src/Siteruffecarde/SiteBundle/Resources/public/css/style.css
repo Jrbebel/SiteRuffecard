@@ -20,6 +20,18 @@ p{
     font-family: 'Oxygen',Helvetica, Times New Roman, sans-serif ;
     color:black;
 }
+
+
+.container-login{
+      font-family: 'Oxygen',Helvetica, Times New Roman, sans-serif ; 
+    padding: 80px;
+    color: black;
+}
+ #lostmsd{
+    margin-left: 180px;
+    margin-bottom: 20px;
+}
+
 /* Standard Styles Starts */
 
 
