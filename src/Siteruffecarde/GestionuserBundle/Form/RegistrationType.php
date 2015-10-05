@@ -20,12 +20,12 @@ class RegistrationType extends AbstractType{
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('Nom','text')
-                ->add('Prenom','text')
-                ->add('Birthday')
-                ->add('Tel','integer')
+                ->add('Prenom','text',array('label'=>'Prénom'))
+                ->add('Birthday','date',array('label'=>'Né(e) le','years'=> range('2010','1940')))
+                ->add('Tel','integer',array('label'=>'Téléphone'))
                 ->add('Adresse','text')
-                ->add('Complement','text')
-                ->add('CdePostal')
+                ->add('Complement','text',array('label'=>'Complément','required'=>false))
+                ->add('CdePostal','integer',array('label'=>'Code Postal'))
                 ->add('Ville','text')
             ;
     }

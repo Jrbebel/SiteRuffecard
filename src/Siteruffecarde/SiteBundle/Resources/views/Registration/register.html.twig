@@ -59,22 +59,22 @@
                         <div class="col-sm-6">
                             {{form_widget(form.plainPassword.second, {'attr': {'class': 'form-control'}} )}}
                         </div>
-                        
+
 
                     </div>   
                     <div class="form-group">
 
                         <label for="fos_user_registration_form_Birthday" class="col-sm-4 control-label"> {{ form_label(form.Birthday ) }}    </label>
 
-                        <div class="col-sm-6">
-                            {{form_widget(form.Birthday, {'attr': {'class': 'form-control','type' : 'date'}} )}}
+                        <div class="col-sm-4">
+                            {{ form_widget( form.Birthday, {'attr': {'type' : 'date'}} )}}
                         </div>
                     </div>
                     <div class="form-group">
 
                         <label for="usernameusernamefos_user_registration_form_Tel" class="col-sm-4 control-label"> {{ form_label(form.Tel ) }}    </label>
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             {{form_widget(form.Tel, {'attr': {'class': 'form-control'}} )}}
                         </div>
                     </div>
@@ -98,7 +98,7 @@
 
                         <label for="fos_user_registration_form_CdePostal" class="col-sm-4 control-label"> {{ form_label(form.CdePostal ) }}    </label>
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-2">
                             {{form_widget(form.CdePostal, {'attr': {'class': 'form-control'}} )}}
                         </div>
                     </div>
@@ -109,8 +109,8 @@
                         <div class="col-sm-6">
                             {{form_widget(form.Ville, {'attr': {'class': 'form-control'}} )}}
                         </div>
-                        
-                         <div id="reinitialise" class="col-sm-offset-2 col-sm-10"> 
+
+                        <div id="reinitialise" class="col-sm-offset-2 col-sm-10"> 
 
                             <input type="submit" class="btn btn-default" value="{{ 'registration.submit'|trans }}" />
 
