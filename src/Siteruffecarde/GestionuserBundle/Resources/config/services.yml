@@ -1,0 +1,6 @@
+services:
+    app.form.registration:
+        class: Siteruffecarde\GestionuserBundle\Form\RegistrationType
+        tags:
+            - { name: form.type, alias: siteruffecarde_user_registration }
+

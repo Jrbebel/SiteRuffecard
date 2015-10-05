@@ -92,3 +92,7 @@ fos_user:
             from_email:
                 address:        registration@example.com
                 sender_name:    Enregistrement Ruffe CarD
+        form:
+            type : siteruffecarde_user_registration
+                
+                

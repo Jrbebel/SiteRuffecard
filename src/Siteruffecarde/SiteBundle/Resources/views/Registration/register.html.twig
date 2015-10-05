@@ -2,6 +2,7 @@
 
 
 {% trans_default_domain 'FOSUserBundle' %}
+
 {% block body %}
 
     <div class="container container-login">
@@ -13,7 +14,7 @@
 
                     <div class="form-group">
 
-                        <label for="username" class="col-sm-4 control-label"> {{ form_label(form.username ) }}    </label>
+                        <label for="fos_user_registration_form_username" class="col-sm-4 control-label"> {{ form_label(form.username ) }}    </label>
 
                         <div class="col-sm-6">
                             {{form_widget(form.username, {'attr': {'class': 'form-control'}} )}}
@@ -21,7 +22,23 @@
                     </div>
                     <div class="form-group">
 
-                        <label for="username" class="col-sm-4 control-label"> {{ form_label(form.email ) }}    </label>
+                        <label for="fos_user_registration_form_Nom" class="col-sm-4 control-label"> {{ form_label(form.Nom ) }}    </label>
+
+                        <div class="col-sm-6">
+                            {{form_widget(form.Nom, {'attr': {'class': 'form-control'}} )}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="fos_user_registration_form_Prenom" class="col-sm-4 control-label"> {{ form_label(form.Prenom ) }}    </label>
+
+                        <div class="col-sm-6">
+                            {{form_widget(form.Prenom, {'attr': {'class': 'form-control'}} )}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="fos_user_registration_form_email" class="col-sm-4 control-label"> {{ form_label(form.email ) }}    </label>
 
                         <div class="col-sm-6">
                             {{form_widget(form.email, {'attr': {'class': 'form-control'}} )}}
@@ -29,7 +46,7 @@
                     </div>
                     <div class="form-group">
 
-                        <label for="username" class="col-sm-4 control-label"> {{ form_label(form.plainPassword.first) }}    </label>
+                        <label for="fos_user_registration_form_plainPassord_first" class="col-sm-4 control-label"> {{ form_label(form.plainPassword.first) }}    </label>
 
                         <div class="col-sm-6">
                             {{form_widget(form.plainPassword.first, {'attr': {'class': 'form-control'}} )}}
@@ -37,18 +54,69 @@
                     </div>
                     <div class="form-group">
 
-                        <label for="username" class="col-sm-4 control-label"> {{ form_label(form.plainPassword.second) }}    </label>
+                        <label for="fos_user_registration_plainPassword_second" class="col-sm-4 control-label"> {{ form_label(form.plainPassword.second) }}    </label>
 
                         <div class="col-sm-6">
                             {{form_widget(form.plainPassword.second, {'attr': {'class': 'form-control'}} )}}
                         </div>
-                        <div id="reinitialise" class="col-sm-offset-2 col-sm-10"> 
+                        
+
+                    </div>   
+                    <div class="form-group">
+
+                        <label for="fos_user_registration_form_Birthday" class="col-sm-4 control-label"> {{ form_label(form.Birthday ) }}    </label>
+
+                        <div class="col-sm-6">
+                            {{form_widget(form.Birthday, {'attr': {'class': 'form-control','type' : 'date'}} )}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="usernameusernamefos_user_registration_form_Tel" class="col-sm-4 control-label"> {{ form_label(form.Tel ) }}    </label>
+
+                        <div class="col-sm-6">
+                            {{form_widget(form.Tel, {'attr': {'class': 'form-control'}} )}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="fos_user_registration_form_Adresse" class="col-sm-4 control-label"> {{ form_label(form.Adresse ) }}    </label>
+
+                        <div class="col-sm-6">
+                            {{form_widget(form.Adresse, {'attr': {'class': 'form-control'}} )}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="fos_user_registration_form_Complement" class="col-sm-4 control-label"> {{ form_label(form.Complement ) }}    </label>
+
+                        <div class="col-sm-6">
+                            {{form_widget(form.Complement, {'attr': {'class': 'form-control'}} )}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="fos_user_registration_form_CdePostal" class="col-sm-4 control-label"> {{ form_label(form.CdePostal ) }}    </label>
+
+                        <div class="col-sm-6">
+                            {{form_widget(form.CdePostal, {'attr': {'class': 'form-control'}} )}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="fos_user_registration_form_Ville" class="col-sm-4 control-label"> {{ form_label(form.Ville ) }}    </label>
+
+                        <div class="col-sm-6">
+                            {{form_widget(form.Ville, {'attr': {'class': 'form-control'}} )}}
+                        </div>
+                        
+                         <div id="reinitialise" class="col-sm-offset-2 col-sm-10"> 
 
                             <input type="submit" class="btn btn-default" value="{{ 'registration.submit'|trans }}" />
 
-                        </div>   
+                        </div>  
+                    </div>
 
-                    </div>   
 
 
                     {{ form_rest(form) }}
