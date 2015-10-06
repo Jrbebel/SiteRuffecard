@@ -23,15 +23,20 @@ p{
 
 /*Page de login*/
 .container-login{
-      font-family: 'Oxygen',Helvetica, Times New Roman, sans-serif ; 
+    font-family: 'Oxygen',Helvetica, Times New Roman, sans-serif ; 
     padding: 80px;
     color: black;
 }
- #lostmsd{
+#lostmsd{
     margin-left: 180px;
     margin-bottom: 20px;
 }
-
+.menuprofile a{
+    color:black;text-align:center;text-decoration: none;padding:20px ;
+}
+.popover-content{
+    color:#878a8c;
+}
 /*Page de reinitialisation du mot de passe*/ 
 
 #reinitialise{

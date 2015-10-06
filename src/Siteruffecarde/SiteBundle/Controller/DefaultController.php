@@ -10,7 +10,7 @@ class DefaultController extends Controller
 {
     /**
      * Page d'accueil du site
-     * @Route("/")
+     * @Route("/",name="Home")
      * @Template()
      */
     public function indexAction()

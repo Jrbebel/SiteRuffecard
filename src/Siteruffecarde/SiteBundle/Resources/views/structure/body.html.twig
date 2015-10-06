@@ -8,13 +8,13 @@
                 <div class="col-sm-6 col-xs-12">
                     <div class="header-links">
                         <ul class="nav navbar-nav pull-left">
-                            <li><a href="#">Contact</a></li>
+                            {#<li><a href="#">Contact</a></li>
                             <li><a href="#">Succursales</a></li>
                             <li><a href="#">Sections</a></li>
                             <li><a href="#">Presse</a></li>
                             <li><a href="#">Politique</a></li>
                             <li><a href="#">Sitemap</a></li>
-                            <li><a href="#">Inforoute</a></li>
+                            <li><a href="#">Inforoute</a></li>#}
                         </ul>
                     </div>
                 </div>
@@ -23,38 +23,64 @@
                 <div class="col-sm-6 col-xs-12">
                     <div class="header-links">
                         <ul class="nav navbar-nav pull-right">
-                            <li>
+                            {#<li>
                                 <a href="#">
                                     <i class="fa fa-user" title="Mon Compte"></i>
                                     <span class="hidden-sm hidden-xs">
                                         Mon Compte
                                     </span>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-shopping-cart" title="Panier"></i>
-                                    <span class="hidden-sm hidden-xs">
-                                        Shop
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{path('fos_user_registration_register')}}">
-                                    <i class="fa fa-unlock" title="Register"></i>
-                                    <span class="hidden-sm hidden-xs">
-                                        S'inscrire
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{path('fos_user_security_login')}}">
-                                    <i class="fa fa-lock" title="Login"></i>
-                                    <span class="hidden-sm hidden-xs">
-                                        Se connecter
-                                    </span>
-                                </a>
-                            </li>
+                            </li>#}
+                            {#  <li>
+                                  <a href="#">
+                                      <i class="fa fa-shopping-cart" title="Panier"></i>
+                                      <span class="hidden-sm hidden-xs">
+                                          Shop
+                                      </span>
+                                  </a>
+                              </li>#}
+                            {% if app.user %}
+                                <li style=' background: #002e74 ;'>
+                                    <a href="#" id="pop" data-toggle="popover" data-trigger="focus"   data-html="true" 
+                                       data-content="
+                                       <ul style='text-align:center;'>
+
+                                       <li  style='margin-bottom:10px ;'>
+                                       <a  style='color:black;text-align:center;text-decoration: none ;' class='menuprofile ' href='index.html'>
+                                       <i class='fa fa-power-off'>Mon compte</i>
+                                       </a>
+                                       </li>
+                                       <li style='margin-bottom:10px ;'>
+                                       <a  style='color:black;text-align:center;text-decoration: none;' class='menuprofile' href='{{path('fos_user_security_logout')}}'>
+                                       <i class='fa fa-power-off'>Se déconnecter</i>
+                                       </a>
+
+                                       </li>
+
+                                       </ul>"
+                                       >
+                                        Bienvenue  {{app.user.Nom}} {{app.user.Prenom }} 
+                                    </a>
+
+
+                                {% else %}
+                                <li>
+                                    <a href="{{path('fos_user_registration_register')}}">
+                                        <i class="fa fa-unlock" title="Register"></i>
+                                        <span class="hidden-sm hidden-xs">
+                                            S'inscrire
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{path('fos_user_security_login')}}">
+                                        <i class="fa fa-lock" title="Login"></i>
+                                        <span class="hidden-sm hidden-xs">
+                                            Se connecter
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
@@ -84,7 +110,7 @@
                     <!-- Logo Starts -->
                     <div class="col-md-6">
                         <div id="logo">
-                            <a href="index.html"><img src="{{asset('bundles/siteruffecardesite/images/logo.png')}}" title="Ruffe Card" alt="Ruffe Card" class="img-responsive" /></a>
+                            <a href="{{path('Home')}}"><img src="{{asset('bundles/siteruffecardesite/images/logo.png')}}" title="Ruffe Card" alt="Ruffe Card" class="img-responsive" /></a>
                         </div>
                     </div>
                     <!-- Logo Starts -->
@@ -190,7 +216,7 @@
                 <!-- Navbar Cat collapse Starts -->
                 <div class="collapse navbar-collapse navbar-cat-collapse">
                     <ul class="nav navbar-nav pull-left">
-                        <li><a href="#"><i class="fa fa-home" title="Accueil"></i> Accueil</a></li>
+                        <li><a href="{{path('Home')}}"><i class="fa fa-home" title="Accueil"></i> Accueil</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <li><a href="#">Avantages Membres</a></li>
@@ -211,3 +237,4 @@
     <!-- Header Section Ends -->
     {% block body %}
     {% endblock body %}
+

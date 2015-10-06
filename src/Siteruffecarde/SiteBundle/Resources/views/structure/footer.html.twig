@@ -82,6 +82,8 @@
 	<!-- Copyright Area Ends -->
 	</footer>
 <!-- Footer Section Ends -->
+
+
 <!-- JavaScript Files -->
 <script src="{{asset('bundles/siteruffecardesite/js/jquery-1.11.1.min.js')}}"></script>
 <script src="{{asset('bundles/siteruffecardesite/js/jquery-migrate-1.2.1.min.js')}}"></script>
@@ -89,7 +91,18 @@
 <script src="{{asset('bundles/siteruffecardesite/js/bootstrap-hover-dropdown.min.js')}}"></script>
 <script src="{{asset('bundles/siteruffecardesite/js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('bundles/siteruffecardesite/js/custom.js')}}"></script>
+ {% block javascripts %}
+        <script>
+        $(document).ready(function(){    
+            
+        $(function (){
 
+$("#pop").popover({placement:'bottom'});
 
+});
+
+        }); 
+        </script>
+    {% endblock javascripts %}
 </body>
 </html>
